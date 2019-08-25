@@ -63,6 +63,7 @@ public class Main {
                     sendResponse = bot.execute(new SendMessage(update.message()
                             .chat().id(), "Aguarde estamos consultando nosso estoque"));
                 }
+// fim dos teste
 
             }
 
