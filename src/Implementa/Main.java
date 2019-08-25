@@ -12,6 +12,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 import com.pengrad.telegrambot.response.BaseResponse;
 import com.pengrad.telegrambot.response.GetUpdatesResponse;
 import com.pengrad.telegrambot.response.SendResponse;
+import javax.swing.JOptionPane;
 
 public class Main {
 
@@ -29,6 +30,7 @@ public class Main {
 
         while (true) {
 
+            JOptionPane.showMessageDialog(null, "Serviço no ar");
             updatesResponse = bot.execute(new GetUpdates().limit(100).offset(m));
 
             List<Update> updates = updatesResponse.updates();
