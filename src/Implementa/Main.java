@@ -27,10 +27,10 @@ public class Main {
         BaseResponse baseResponse;
 
         int m = 0;
+        JOptionPane.showMessageDialog(null, "Serviço no ar");
 
         while (true) {
 
-            JOptionPane.showMessageDialog(null, "Serviço no ar");
             updatesResponse = bot.execute(new GetUpdates().limit(100).offset(m));
 
             List<Update> updates = updatesResponse.updates();
